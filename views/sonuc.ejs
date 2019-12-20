@@ -1,0 +1,11 @@
+<h1>Sonuc Sayfası</h1>
+
+<% veri["results"].forEach(function(sonuc) { %>
+    <h1><%=sonuc["name"]%></h1>
+    <h3>Kilosu : <%=sonuc["mass"]%></h3>
+    <h3>Boyu : <%=sonuc["height"]%></h3>
+    <h3>Doğum Yılı : <%=sonuc["birth_year"]%></h3>
+    <h3>Ten Rengi : <%=sonuc["skin_color"]%></h3>
+<%})%>
+
+<a href="/">Tekrar Ara</a>
